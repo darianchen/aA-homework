@@ -24,6 +24,8 @@ class Octopus
 
         def self.dominant(fish)
             
+            
+
 
         end
 

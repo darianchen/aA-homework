@@ -11,14 +11,18 @@ describe Dessert do
 
 
   describe "#initialize" do
-    it "sets a type"
-      expect(cookie.type) to eq("cookie")
-    it "sets a quantity"
-      expect(cookie.quantity) to eq("cookie")
-    it "starts ingredients as an empty array"
-        expect(ingredients).to eq([])
-    it "raises an argument error when given a non-integer quantity"
-        expect { Dessert.new{"cake","1000","gordon"}
+    it "sets a type" do
+      expect(cookie.type).to eq("cookie")
+    end
+    it "sets a quantity" do
+      expect(cookie.quantity).to eq("cookie")
+    end
+    it "starts ingredients as an empty array" do
+        expect().to eq([])
+    end
+    it "raises an argument error when given a non-integer quantity" do
+        expect { Dessert.new("cake","1000","gordon")} 
+    end
   end
 
   describe "#add_ingredient" do
